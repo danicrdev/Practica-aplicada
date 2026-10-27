@@ -1,0 +1,20 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><title>Auditoría OWASP 2025</title>
+<style>body{font:14px Arial,sans-serif;margin:2rem;color:#17202b}h1{color:#8b183d}
+table{width:100%;border-collapse:collapse}td,th{border:1px solid #ccd2d9;padding:8px;text-align:left;vertical-align:top}
+th{background:#f1e5eb}tr:nth-child(even){background:#f9f9fa}.notice{background:#f6f1f3;padding:12px}</style></head><body>
+<h1>Hallazgos normalizados | OWASP Top 10:2025</h1>
+<p class="notice">INFORME ACADÉMICO. No certifica seguridad ni reemplaza revisión profesional. Importación offline; no se realizaron pruebas activas.</p>
+<p>Fecha UTC: 2026-10-21T03:05:12.353001+00:00 | Hallazgos: 3 | LLM: no utilizado</p>
+<h2>Hallazgos</h2><table><thead><tr><th>ID</th><th>OWASP</th><th>Hallazgo</th><th>Riesgo reportado</th><th>Revisión</th><th>Fuente</th><th>Ubicación</th><th>Recomendación</th></tr></thead>
+<tbody><tr><td>61afaed367db55</td><td>A05</td><td>SQL Injection</td><td>High</td><td>pendiente</td><td>ZAP</td><td>http://laboratorio.local/producto</td><td>Usar consultas parametrizadas, escape contextual y validación de entradas.</td></tr>
+<tr><td>0db5ab83f16807</td><td>A02</td><td>Content Security Policy (CSP) Header Not Set</td><td>Medium</td><td>pendiente</td><td>ZAP</td><td>http://laboratorio.local/inicio</td><td>Aplicar hardening, gestionar cabeceras, eliminar datos de depuración y revisar configuración.</td></tr>
+<tr><td>f2ddd13c68af32</td><td>A04</td><td>Possible hardcoded password</td><td>WARNING</td><td>pendiente</td><td>Semgrep</td><td>src/demo.py:42</td><td>Revisar TLS, protección de secretos y algoritmos criptográficos.</td></tr></tbody></table><h2>Integridad de insumos</h2><pre>[
+  {
+    &quot;name&quot;: &quot;zap_ejemplo.json&quot;,
+    &quot;sha256&quot;: &quot;af18614aa0192ff02ee5e8af929aef1c83c68f376892ee393e02398017c5d1f3&quot;
+  },
+  {
+    &quot;name&quot;: &quot;semgrep_ejemplo.json&quot;,
+    &quot;sha256&quot;: &quot;45de5a3cdfb1a74a5038e1d4688b0dcff9f810cd51454b946ce25677322f54c7&quot;
+  }
+]</pre></body></html>

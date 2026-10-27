@@ -1,0 +1,78 @@
+{
+  "metadata": {
+    "generated_at_utc": "2026-10-21T03:05:12.353001+00:00",
+    "taxonomy": "OWASP Top 10:2025",
+    "inputs": [
+      {
+        "name": "zap_ejemplo.json",
+        "sha256": "af18614aa0192ff02ee5e8af929aef1c83c68f376892ee393e02398017c5d1f3"
+      },
+      {
+        "name": "semgrep_ejemplo.json",
+        "sha256": "45de5a3cdfb1a74a5038e1d4688b0dcff9f810cd51454b946ce25677322f54c7"
+      }
+    ],
+    "model": "no utilizado",
+    "execution_mode": "importación offline, sin escaneo activo",
+    "finding_count": 3
+  },
+  "findings": [
+    {
+      "tool": "ZAP",
+      "rule": "40018",
+      "title": "SQL Injection",
+      "description": "Alerta simulada para comprobar mapeo y reporte.",
+      "severity": "High",
+      "confidence": "Medium",
+      "url": "http://laboratorio.local/producto",
+      "evidence": "parámetro id en archivo de ejemplo",
+      "cwe": "CWE-89",
+      "id": "61afaed367db55",
+      "category": "A05",
+      "category_name": "Injection",
+      "priority": 3,
+      "status": "pendiente",
+      "recommendation": "Usar consultas parametrizadas, escape contextual y validación de entradas.",
+      "ai_mode": "no solicitada",
+      "ai_explanation": null
+    },
+    {
+      "tool": "ZAP",
+      "rule": "10038",
+      "title": "Content Security Policy (CSP) Header Not Set",
+      "description": "Falta una política CSP según evidencia de laboratorio.",
+      "severity": "Medium",
+      "confidence": "High",
+      "url": "http://laboratorio.local/inicio",
+      "evidence": "",
+      "cwe": "CWE-693",
+      "id": "0db5ab83f16807",
+      "category": "A02",
+      "category_name": "Security Misconfiguration",
+      "priority": 2,
+      "status": "pendiente",
+      "recommendation": "Aplicar hardening, gestionar cabeceras, eliminar datos de depuración y revisar configuración.",
+      "ai_mode": "no solicitada",
+      "ai_explanation": null
+    },
+    {
+      "tool": "Semgrep",
+      "rule": "python.lang.security.audit.dangerous",
+      "title": "Possible hardcoded password",
+      "description": "Possible hardcoded password",
+      "severity": "WARNING",
+      "confidence": "",
+      "url": "src/demo.py:42",
+      "evidence": "password = [REDACTADO]",
+      "cwe": "CWE-798",
+      "id": "f2ddd13c68af32",
+      "category": "A04",
+      "category_name": "Cryptographic Failures",
+      "priority": 2,
+      "status": "pendiente",
+      "recommendation": "Revisar TLS, protección de secretos y algoritmos criptográficos.",
+      "ai_mode": "no solicitada",
+      "ai_explanation": null
+    }
+  ]
+}
